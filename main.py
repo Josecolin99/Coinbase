@@ -5,7 +5,7 @@ if __name__ == "__main__":
     valor = []
     while True:
         request = requests.get(
-            "https://api.coinbase.com/v2/exchange-rates?currency=ETH"
+            "https://api.coinbase.com/v2/exchange-rates?currency=USD"
             )
         if request.status_code == 200:
             print(request.json()['data']['rates']['MXN'])
